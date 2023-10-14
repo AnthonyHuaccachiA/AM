@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ La pregunta ♥</title>
+  <style>
+    .body {
+      background-color: #ffcdd4;
+      text-align: center;
+    }
+
+    .body__title {
+      color: #e57d90;
+      font-size: 70px;
+      margin: 50px;
+    }
+
+    .body__img {
+      padding: 1px;
+      margin: -10px;
+      width: 50%;
+      max-width: 400px;
+      border-radius: 25%;
+      box-shadow: 0px 0px 30px black;
+    }
+    .btn_yes{
+        width: 100px;
+        height: 60px;
+        background-color:#f3aacb;
+        border-radius: 25px;
+        margin: 20px;
+        font-weight: bold;
+        align-content: center;
+        font-size: 14px;
+    }
+    .btn_no{
+        width: 100px;
+        height: 60px;
+        background-color: #f3aacb;
+        border-radius: 25px;
+        margin: 40px;
+        font-weight: bold;
+        font-size: 14px;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">¿Quieres ser mi novia?</h1>
+  <img src="20230921_192506.jpg" alt="Foto D My" class="body__img" />
+  <br>
+
+  <button class="btn_yes" id="yes">SI</button>
+  <button class="btn_no" id="no">NO</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('Finalmente ahora si somos novios');
+      alert('Ahora para celebrar nuestra cancion favorita <3');
+      location.href = 'https://youtu.be/txG6saZFozQ?t=69';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
